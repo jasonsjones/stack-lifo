@@ -8,5 +8,5 @@ This is a javascript implementation of a
 data structure.
 
 A stack data structure models the notion of 'Last in First Out', or LIFO&mdash;
-image a stack of papers or plates.  The first one item that would be lifted
-a stack is the last item placed on top of the stack.
+image a stack of papers or plates.  The first item to be removed from a stack
+is the last item placed on top of the stack.
