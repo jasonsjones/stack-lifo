@@ -29,5 +29,8 @@
     "grunt": "^0.4.5",
     "mocha": "^2.1.0",
     "grunt-contrib-jshint": "^0.10.0"
+  },
+  "dependencies": {
+    "dbly-linked-list": "^0.1.2"
   }
 }
