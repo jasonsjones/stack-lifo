@@ -35,8 +35,18 @@
         this._list = new LinkedList();
     }
 
+    /* Functions attached to the Stack prototype.  All stack instances
+     * will share these methods, meaning there will NOT be copies made for each
+     * instance.  This will be a huge memory savings since there may be several
+     * different stack instances.
+     */
     Stack.prototype = {
 
+        /**
+         * Determines if the list is empty
+         *
+         * @returns {boolean} true if the list is empty, false otherwise
+         */
         isEmpty: function () {
             return this._list.isEmpty();
         },
