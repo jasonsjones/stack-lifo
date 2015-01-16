@@ -51,22 +51,44 @@
             return this._list.isEmpty();
         },
 
+        /**
+         * Returns the size, or number of items on the stack
+         *
+         * @returns {number} the number of items on the stack
+         */
         size: function () {
             return this._list.getSize();
         },
 
+        /**
+         * Pushes an new item containing 'data' onto the top of the stack
+         *
+         * @param {object} data the data to push on top of the stack
+         */
         push: function (data) {
             return this._list.insertFirst(data);
         },
 
+        /**
+         * Removes the item from the top of the stack
+         *
+         * @returns {object} the item, or data, from the top of the stack
+         */
         pop: function () {
             return this._list.removeFirst().getData();
         },
 
+        /**
+         * Returns the item from the top of the stack but does not remove it
+         *
+         * @returns {object} the item, or data, from the top of the stack
+         */
         peek: function () {
             return this._list.getHeadNode().getData();
         }
     };
 
+    // export the constructor fn to make it available for use outside
+    // this file
     module.exports = Stack;
 })();
