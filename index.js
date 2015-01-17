@@ -12,12 +12,12 @@
      * Stack Data Structure
      *
      * This is a 'stack' data structure that implements the notion
-     * of 'Last in First Out', or LIFO.  The underlying data structure
-     * is a doubly linked list.  This linked list data structure does
-     * all the heavy lifting, enabling this implementation to be a simple
-     * wrapper around the linked list to leverage the applicable methods
-     * and properties.  This provides a very clean and simple implementation
-     * for this stack data structure.
+     * of a 'Last in First Out', or LIFO, protocol.  The underlying data
+     * structure is a doubly linked list.  This linked list data structure
+     * does all the heavy lifting, enabling this implementation to be a
+     * simple wrapper around the linked list to leverage the applicable
+     * methods and properties.  This provides a very clean and simple
+     * implementation for this stack data structure.
      *
      ***********************************************************/
 
@@ -79,12 +79,20 @@
         },
 
         /**
-         * Returns the item from the top of the stack but does not remove it
+         * Returns the data of the item on the top of the stack,
+         * but does not remove it
          *
          * @returns {object} the item, or data, from the top of the stack
          */
         peek: function () {
             return this._list.getHeadNode().getData();
+        },
+
+        /**
+         * Clears the stack of all data
+         */
+        clear: function () {
+            return this._list.clear();
         }
     };
 

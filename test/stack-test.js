@@ -72,4 +72,15 @@ describe('Stack Unit Tests', function() {
         stack.peek().should.equal('and yet some more...');
         stack.size().should.equal(3);
     });
+
+    it('should clear the stack of all data', function () {
+        stack.push('some test data');
+        stack.push('some more test data');
+        stack.push('and yet some more...');
+        stack.push('and how about some more...');
+        stack.size().should.equal(4);
+        stack.clear();
+        stack.size().should.equal(0);
+        stack.isEmpty().should.equal(true);
+    });
 });
