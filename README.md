@@ -26,6 +26,12 @@ underlying data structure.  This offers several benefits.
   methods of the linked list that we need to contstruct the properties of a
   stack data structure.
 
+* The 'push' or 'pop' operations can be completed in O(1) time.
+
+* No additional overhead is required to 'resize' the data structure to add
+  more elements to the stack.  When elements are 'pushed' on the stack, the
+  underlying linked list will adjust its size dynamically.
+
 *For specific examples and documentation, see the below sections*
 
 ### Motivation:
@@ -138,3 +144,4 @@ MIT &copy; Jason Jones
 [travis-url]:https://travis-ci.org/jasonsjones/stack-lifo
 [dm-image]:https://david-dm.org/jasonsjones/stack-lifo
 [dm-url]:https://david-dm.org/jasonsjones/stack-lifo.svg
+
