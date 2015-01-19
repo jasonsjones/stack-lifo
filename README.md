@@ -15,7 +15,7 @@ an item is added to the stack, it is said to be 'pushed' on the stack.
 Similarly, when an item is removed, it is said to be 'popped' from the stack.
 
 This particulary implementation utilizes a
-[linked list](https://github.com/jasonsjones/doubly-linked-list) as the
+[linked list](https://www.npmjs.com/package/dbly-linked-list) as the
 underlying data structure.  This offers several benefits.
 
 * We can leverage the work that has already been done to implement the
