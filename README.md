@@ -14,7 +14,7 @@ the first item to be removed.  In the parlance of a stack data structure, when
 an item is added to the stack, it is said to be 'pushed' on the stack.
 Similarly, when an item is removed, it is said to be 'popped' from the stack.
 
-This particulary implementation utilizes a
+This particular implementation utilizes a
 [linked list](https://www.npmjs.com/package/dbly-linked-list) as the
 underlying data structure.  This offers several benefits.
 
@@ -23,7 +23,7 @@ underlying data structure.  This offers several benefits.
 
 * This lends itself to a level of composition and abstraction which greatly
   simplifies this implementation.  It provides a wrapper around only those
-  methods of the linked list that we need to contstruct the properties of a
+  methods of the linked list that we need to construct the properties of a
   stack data structure.
 
 * The 'push' or 'pop' operations can be completed in O(1) time.
