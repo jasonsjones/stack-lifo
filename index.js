@@ -43,9 +43,9 @@
     Stack.prototype = {
 
         /**
-         * Determines if the list is empty
+         * Determines if the stack is empty
          *
-         * @returns {boolean} true if the list is empty, false otherwise
+         * @returns {boolean} true if the stack is empty, false otherwise
          */
         isEmpty: function () {
             return this._list.isEmpty();
