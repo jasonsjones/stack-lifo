@@ -61,7 +61,7 @@
         },
 
         /**
-         * Pushes an new item containing 'data' onto the top of the stack
+         * Pushes a new item containing 'data' onto the top of the stack
          *
          * @param {object} data the data to push on top of the stack
          */
