@@ -113,14 +113,14 @@ stack.isEmpty();
 **Available methods for a stack instance:**
 
 * ### isEmpty()
-    Determines if the stack is empty or not. Returns true if is empty, false
-    otherwise.
+    Determines if the stack is empty or not. Returns true if the stack is
+    empty, false otherwise.
 
 * ### size()
     Returns the size of the stack, or number of items
 
 * ### clear()
-    Clears the list of all nodes/data
+    Clears the stack of all data
 
 * ### push()
     Pushes an new item containing 'data' onto the top of the stack
@@ -144,4 +144,3 @@ MIT &copy; Jason Jones
 [travis-url]:https://travis-ci.org/jasonsjones/stack-lifo
 [dm-image]:https://david-dm.org/jasonsjones/stack-lifo
 [dm-url]:https://david-dm.org/jasonsjones/stack-lifo.svg
-
