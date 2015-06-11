@@ -74,7 +74,7 @@ API section._
 
 ```javascript
 var Stack = require('stack-lifo');
-var stack - new Stack();
+var stack = new Stack();
 
 stack.isEmpty();
 // --> true
