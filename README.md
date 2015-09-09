@@ -1,4 +1,4 @@
-# [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![dependency status][dm-url]][dm-image]
+[![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![dependency status][dm-url]][dm-image]
 
 # Stack Data Structure
 
