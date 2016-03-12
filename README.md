@@ -1,4 +1,4 @@
-[![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![dependency status][dm-url]][dm-image]
+[![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![dependency status][dm-url]][dm-image] [![devDependency status][devdep-image]][devdep-url]
 
 # Stack Data Structure
 
@@ -144,3 +144,5 @@ MIT &copy; Jason Jones
 [travis-url]:https://travis-ci.org/jasonsjones/stack-lifo
 [dm-image]:https://david-dm.org/jasonsjones/stack-lifo
 [dm-url]:https://david-dm.org/jasonsjones/stack-lifo.svg
+[devdep-image]:https://david-dm.org/jasonsjones/stack-lifo/dev-status.svg
+[devdep-url]:https://david-dm.org/jasonsjones/stack-lifo#info=devDependencies
