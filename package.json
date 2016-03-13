@@ -1,6 +1,6 @@
 {
   "name": "stack-lifo",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Javascript implementation of a stack (LIFO) data structure",
   "main": "index.js",
   "scripts": {
