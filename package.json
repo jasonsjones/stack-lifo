@@ -24,6 +24,7 @@
   "homepage": "https://github.com/jasonsjones/stack-lifo",
   "devDependencies": {
     "gulp": "3.9.1",
+    "gulp-istanbul": "0.10.3",
     "gulp-jscs": "3.0.2",
     "gulp-jshint": "2.0.0",
     "gulp-load-plugins": "1.2.0",

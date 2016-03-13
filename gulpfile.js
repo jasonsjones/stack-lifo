@@ -9,16 +9,24 @@ var source = [
 gulp.task('jshint', function() {
     log('Analyzing source with JSHint and JSCS...');
     return gulp.src(source)
-        .pipe($.jshint('./.jshintrc'))
+        .pipe($.jshint())
         .pipe($.jshint.reporter('jshint-stylish', {verbose: true}))
         .pipe($.jscs());
 });
 
-gulp.task('test', ['jshint'], function () {
+gulp.task('test', ['jshint', 'pre-test'], function () {
     log('Running unit tests with mocha...');
     return gulp
         .src(source[1])
-        .pipe($.mocha());
+        .pipe($.mocha())
+        .pipe($.istanbul.writeReports())
+        .pipe($.istanbul.enforceThresholds({thresholds: {global: 80}}));
+});
+
+gulp.task('pre-test', function () {
+    return gulp.src(['index.js'])
+        .pipe($.istanbul())
+        .pipe($.istanbul.hookRequire());
 });
 
 gulp.task('default', ['test']);
