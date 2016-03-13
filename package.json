@@ -23,18 +23,17 @@
   },
   "homepage": "https://github.com/jasonsjones/stack-lifo",
   "devDependencies": {
-    "gulp": "3.9.0",
+    "gulp": "3.9.1",
     "gulp-jscs": "3.0.2",
     "gulp-jshint": "2.0.0",
-    "gulp-load-plugins": "1.1.0",
+    "gulp-load-plugins": "1.2.0",
     "gulp-mocha": "2.2.0",
     "gulp-util": "3.0.7",
-    "jshint": "2.8.0",
-    "jshint-stylish": "^1.0.2",
-    "mocha": "^2.3.4",
-    "should": "^4.6.5"
+    "jshint-stylish": "2.1.0",
+    "mocha": "2.4.5",
+    "should": "8.2.2"
   },
   "dependencies": {
-    "dbly-linked-list": "^0.1.6"
+    "dbly-linked-list": "0.1.8"
   }
 }
