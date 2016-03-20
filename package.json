@@ -35,6 +35,6 @@
     "should": "8.2.2"
   },
   "dependencies": {
-    "dbly-linked-list": "0.1.8"
+    "dbly-linked-list": "0.1.10"
   }
 }
