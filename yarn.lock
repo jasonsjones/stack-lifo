@@ -151,11 +151,11 @@ cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-dbly-linked-list@0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/dbly-linked-list/-/dbly-linked-list-0.1.10.tgz#41bc7f186be34c8029bbb4e6c25d310501e933a6"
+dbly-linked-list@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/dbly-linked-list/-/dbly-linked-list-0.2.0.tgz#d30f5225dc1ce72220d7931489b0c5703b1aa8aa"
   dependencies:
-    lodash "4.6.1"
+    lodash.isequal "^4.5.0"
 
 debug@3.1.0:
   version "3.1.0"
@@ -464,9 +464,9 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lodash@4.6.1:
-  version "4.6.1"
-  resolved "http://registry.npmjs.org/lodash/-/lodash-4.6.1.tgz#df00c1164ad236b183cfc3887a5e8d38cc63cbbc"
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
 
 lodash@^4.17.10, lodash@^4.17.5:
   version "4.17.11"

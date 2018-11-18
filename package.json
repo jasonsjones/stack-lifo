@@ -25,7 +25,7 @@
     },
     "homepage": "https://github.com/jasonsjones/stack-lifo",
     "dependencies": {
-        "dbly-linked-list": "0.1.10"
+        "dbly-linked-list": "0.2.0"
     },
     "devDependencies": {
         "chai": "^4.2.0",
