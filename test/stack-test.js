@@ -1,86 +1,82 @@
 /* globals describe it beforeEach afterEach */
 
-var should = require('should');
+var expect = require('chai').expect;
 var Stack = require('../');
 
 describe('Stack Unit Tests', function() {
-
     var stack;
 
-    beforeEach(function () {
+    beforeEach(function() {
         stack = new Stack();
     });
 
-    afterEach(function () {
+    afterEach(function() {
         stack = null;
     });
 
-    it('should have a working test environment', function() {
-        true.should.equal(true);
+    it('instantiates a stack instance', function() {
+        expect(stack).to.exist;
     });
 
-    it('should instantiate a stack instance', function () {
-        stack.should.be.ok;
+    it('is empty when first instantiated', function() {
+        expect(stack.isEmpty()).to.be.true;
+        expect(stack.size()).to.equal(0);
     });
 
-    it('should be empty when first instantiated', function () {
-        stack.isEmpty().should.equal(true);
-        stack.size().should.equal(0);
-    });
-
-    it('should push data onto the stack', function () {
+    it('pushes data onto the stack', function() {
         stack.push('some test data');
         stack.push('some more test data');
         stack.push('and yet some more...');
         stack.push({
-            "id": 1,
-            "payload": {
-                "number": 42,
-                "desc": "the answer"
+            id: 1,
+            payload: {
+                number: 42,
+                desc: 'the answer'
             }
         });
-        stack.size().should.equal(4);
+        expect(stack.size()).to.equal(4);
     });
 
-    it('should pop data from the top of the stack', function () {
+    it('pops data from the top of the stack', function() {
         stack.push('some test data');
         stack.push('some more test data');
         stack.push('and yet some more...');
         stack.push({
-            "id": 1,
-            "payload": {
-                "number": 42,
-                "desc": "the answer"
+            id: 1,
+            payload: {
+                number: 42,
+                desc: 'the answer'
             }
         });
-        stack.size().should.equal(4);
+        expect(stack.size()).to.equal(4);
         var top = stack.pop();
-        JSON.stringify(top).should.equal(
-            '{"id":1,"payload":{"number":42,"desc":"the answer"}}');
+        expect(JSON.stringify(top)).to.equal(
+            '{"id":1,"payload":{"number":42,"desc":"the answer"}}'
+        );
 
-        stack.size().should.equal(3);
-
-        stack.pop().should.equal('and yet some more...');
-        stack.size().should.equal(2);
+        expect(stack.size()).to.equal(3);
+        expect(stack.pop()).to.equal('and yet some more...');
+        expect(stack.size()).to.equal(2);
     });
 
-    it('should peek at the data on top of the stack', function () {
+    it('peeks at the data on top of the stack', function() {
         stack.push('some test data');
         stack.push('some more test data');
         stack.push('and yet some more...');
-        stack.size().should.equal(3);
-        stack.peek().should.equal('and yet some more...');
-        stack.size().should.equal(3);
+
+        expect(stack.size()).to.equal(3);
+        expect(stack.peek()).to.equal('and yet some more...');
+        expect(stack.size()).to.equal(3);
     });
 
-    it('should clear the stack of all data', function () {
+    it('clears the stack of all data', function() {
         stack.push('some test data');
         stack.push('some more test data');
         stack.push('and yet some more...');
         stack.push('and how about some more...');
-        stack.size().should.equal(4);
+        expect(stack.size()).to.equal(4);
         stack.clear();
-        stack.size().should.equal(0);
-        stack.isEmpty().should.equal(true);
+        expect(stack.size()).to.equal(0);
+        expect(stack.isEmpty()).to.equal(true);
     });
 });

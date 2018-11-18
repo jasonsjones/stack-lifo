@@ -1,40 +1,40 @@
 {
-  "name": "stack-lifo",
-  "version": "0.1.5",
-  "description": "Javascript implementation of a stack (LIFO) data structure",
-  "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jasonsjones/stack-lifo.git"
-  },
-  "keywords": [
-    "stack",
-    "data structure",
-    "abstract data type",
-    "LIFO"
-  ],
-  "author": "Jason Jones",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jasonsjones/stack-lifo/issues"
-  },
-  "homepage": "https://github.com/jasonsjones/stack-lifo",
-  "devDependencies": {
-    "gulp": "3.9.1",
-    "gulp-istanbul": "0.10.3",
-    "gulp-jscs": "3.0.2",
-    "gulp-jshint": "2.0.0",
-    "gulp-load-plugins": "1.2.0",
-    "gulp-mocha": "2.2.0",
-    "gulp-util": "3.0.7",
-    "jshint-stylish": "2.1.0",
-    "mocha": "2.4.5",
-    "should": "8.2.2"
-  },
-  "dependencies": {
-    "dbly-linked-list": "0.1.10"
-  }
+    "name": "stack-lifo",
+    "version": "0.1.5",
+    "description": "Javascript implementation of a stack (LIFO) data structure",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jasonsjones/stack-lifo.git"
+    },
+    "keywords": [
+        "stack",
+        "data structure",
+        "abstract data type",
+        "LIFO"
+    ],
+    "author": "Jason Jones",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jasonsjones/stack-lifo/issues"
+    },
+    "homepage": "https://github.com/jasonsjones/stack-lifo",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "gulp": "3.9.1",
+        "gulp-istanbul": "0.10.3",
+        "gulp-jscs": "3.0.2",
+        "gulp-jshint": "2.0.0",
+        "gulp-load-plugins": "1.2.0",
+        "gulp-mocha": "2.2.0",
+        "gulp-util": "3.0.7",
+        "jshint-stylish": "2.1.0",
+        "mocha": "2.4.5"
+    },
+    "dependencies": {
+        "dbly-linked-list": "0.1.10"
+    }
 }
